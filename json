@@ -2,6 +2,7 @@
 "data": [
 {
 "web": "https://www.google.com/",
+  "web2": "https://www.google.com/",
 "version": "1.0.0",
 "enable": false
 }
