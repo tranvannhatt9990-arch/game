@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Liên hệ - Comic</title>
+  <style>
+    :root{
+      --bg:#f7f8fb;
+      --card:#ffffff;
+      --accent:#0b5fff;
+      --muted:#6b7280;
+      --radius:12px;
+      --maxw:900px;
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,var(--bg),#fff);
+      color:#111827;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+      padding:40px 16px;
+    }
+    .card{
+      width:100%;
+      max-width:var(--maxw);
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:0 6px 20px rgba(13,30,75,0.08);
+      padding:28px;
+    }
+    h1{
+      margin:0 0 8px 0;
+      font-size:1.6rem;
+      letter-spacing:0.01em;
+    }
+    p.lead{
+      margin:0 0 18px 0;
+      color:var(--muted);
+    }
+    section{margin:16px 0;}
+    h2{
+      margin:0 0 8px 0;
+      font-size:1.05rem;
+      color:var(--accent);
+    }
+    ul{margin:8px 0 0 0;padding-left:1.2rem;color:var(--muted)}
+    li{margin:6px 0}
+    address{font-style:normal;color:var(--muted);white-space:pre-line}
+    .muted{color:var(--muted)}
+    .note{font-size:0.95rem;color:var(--muted);margin-top:10px}
+    .commitments{display:grid;gap:6px;margin-top:8px}
+    .commitments li::marker{color:green}
+    .divider{height:1px;background:#eef2ff;margin:18px 0;border-radius:4px}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .footer{margin-top:14px;color:var(--muted);font-size:0.95rem}
+    @media (max-width:520px){
+      body{padding:20px 12px}
+      .card{padding:18px}
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <header>
+      <h1>LIÊN HỆ VỚI CHÚNG TÔI</h1>
+      <p class="lead">Chúng tôi luôn sẵn sàng lắng nghe ý kiến đóng góp và hỗ trợ bạn!</p>
+    </header>
+
+    <section aria-labelledby="email">
+      <h2 id="email">📧 EMAIL</h2>
+      <ul>
+        <li>Hỗ trợ chung: <a href="mailto:support@comic.vn">support@comic.vn</a></li>
+        <li>Hợp tác kinh doanh: <a href="mailto:business@comic.vn">business@comic.vn</a></li>
+        <li>Báo lỗi kỹ thuật: <a href="mailto:tech@comic.vn">tech@comic.vn</a></li>
+        <li>Góp ý nội dung: <a href="mailto:content@comic.vn">content@comic.vn</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="hotline">
+      <h2 id="hotline">📱 HOTLINE</h2>
+      <ul>
+        <li>Tổng đài hỗ trợ: <a href="tel:1900999">1900-999</a></li>
+        <li>Thời gian: 8:00 - 22:00 (Thứ 2 - Chủ nhật)</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="office">
+      <h2 id="office">🏢 VĂN PHÒNG</h2>
+      <address>
+        Công ty TNHH Comic Việt Nam
+        Địa chỉ: Số 123, Đường Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh
+      </address>
+    </section>
+
+    <section aria-labelledby="social">
+      <h2 id="social">🌐 MẠNG XÃ HỘI</h2>
+      <p class="muted">Kết nối với chúng tôi qua:</p>
+      <ul>
+        <li>Facebook: <a href="https://fb.com/ComicVietnam" target="_blank" rel="noopener">fb.com/ComicVietnam</a></li>
+        <li>Instagram: <a href="https://instagram.com/comic_vietnam" target="_blank" rel="noopener">@comic_vietnam</a></li>
+        <li>TikTok: <a href="https://www.tiktok.com/@comicvn" target="_blank" rel="noopener">@comicvn</a></li>
+        <li>YouTube: <a href="https://www.youtube.com/@ComicVietnam" target="_blank" rel="noopener">Comic Vietnam</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="chat">
+      <h2 id="chat">💬 HỖ TRỢ TRỰC TUYẾN</h2>
+      <p class="muted">Chat với chúng tôi ngay trong ứng dụng:</p>
+      <ul>
+        <li>Nhấn vào biểu tượng chat ở góc phải màn hình</li>
+        <li>Thời gian phản hồi: dưới 30 phút</li>
+      </ul>
+    </section>
+
+    <div class="divider" role="separator" aria-hidden="true"></div>
+
+    <section aria-labelledby="feedback">
+      <h2 id="feedback">📝 GỬI PHẢN HỒI</h2>
+      <p class="muted">Để gửi phản hồi chi tiết, vui lòng cung cấp:</p>
+      <ol>
+        <li>Họ tên và email liên hệ</li>
+        <li>Mô tả chi tiết vấn đề/góp ý</li>
+        <li>Ảnh chụp màn hình (nếu có)</li>
+        <li>Phiên bản ứng dụng đang sử dụng</li>
+        <li>Loại thiết bị và hệ điều hành</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="commitments">
+      <h2 id="commitments">🎯 CAM KẾT CỦA CHÚNG TÔI</h2>
+      <ul class="commitments">
+        <li>Phản hồi email trong vòng 24 giờ</li>
+        <li>Giải quyết khiếu nại trong 3-5 ngày làm việc</li>
+        <li>Bảo mật tuyệt đối thông tin khách hàng</li>
+        <li>Hỗ trợ nhiệt tình, chuyên nghiệp</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="partners">
+      <h2 id="partners">🤝 HỢP TÁC</h2>
+      <p class="muted">Nếu bạn là:</p>
+      <ul>
+        <li>Tác giả/Họa sĩ truyện tranh</li>
+        <li>Nhà xuất bản</li>
+        <li>Đối tác kinh doanh</li>
+        <li>Nhà đầu tư</li>
+      </ul>
+      <p class="note">Vui lòng liên hệ qua email: <a href="mailto:business@comic.vn">business@comic.vn</a></p>
+      <p class="muted">Chúng tôi rất mong được hợp tác cùng bạn!</p>
+    </section>
+
+    <section aria-labelledby="copyright">
+      <h2 id="copyright">📢 BÁO LỖI BẢN QUYỀN</h2>
+      <p class="muted">Nếu phát hiện nội dung vi phạm bản quyền, vui lòng gửi thông tin đến:</p>
+      <ul>
+        <li>Email: <a href="mailto:copyright@comic.vn?subject=%5BB%C3%81O%20C%C3%81O%20B%E1%BA%A2N%20QUY%E1%80%8CN%5D%20Tên%20truyện">copyright@comic.vn</a></li>
+        <li>Tiêu đề: [BÁO CÁO BẢN QUYỀN] + Tên truyện</li>
+      </ul>
+      <p class="note">Chúng tôi sẽ xử lý trong vòng 48 giờ.</p>
+    </section>
+
+    <div class="divider" role="separator" aria-hidden="true"></div>
+
+    <section aria-labelledby="thanks">
+      <h2 id="thanks">🙏 CẢM ƠN</h2>
+      <p class="muted">Cảm ơn bạn đã quan tâm và liên hệ với Comic. Mọi ý kiến đóng góp của bạn đều rất quý giá và giúp chúng tôi ngày càng hoàn thiện hơn.</p>
+      <p class="footer">
+        Chúc bạn có những trải nghiệm tuyệt vời cùng Comic!<br>
+        ---<br>
+        Comic Team<br>
+        "Kết nối đam mê đọc truyện"
+      </p>
+    </section>
+  </main>
+</body>
+</html>
